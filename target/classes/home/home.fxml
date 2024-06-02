@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="686.0" maxWidth="1102.0" minHeight="686.0" minWidth="1102.0" prefHeight="686.0" prefWidth="1131.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.home_with_fxml">
+   <children>
+      <BorderPane id="dashboard" layoutX="75.0" layoutY="205.0" prefHeight="200.0" prefWidth="220.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane id="borderpane_img_user" layoutX="44.0" layoutY="35.0" prefHeight="107.0" prefWidth="220.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="108.0" fitWidth="165.0" layoutX="26.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="9.1875" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="29.571428571428584" AnchorPane.topAnchor="6.0">
+                           <image>
+                              <Image url="@../img/img_user/Free-House-Painting-Logo-Vector-Design-2048x1152.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                  <BorderPane layoutX="2.0" layoutY="120.0" prefHeight="79.0" prefWidth="200.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
+                     <center>
+                        <Text id="text_logo" strokeType="OUTSIDE" strokeWidth="0.0" text="My House Is Your Home!" textAlignment="CENTER" wrappingWidth="170.0" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font />
+                           </font>
+                        </Text>
+                     </center>
+                  </BorderPane>
+                  <Text id="text_id_dashboard" fx:id="citizen_id_text" layoutX="18.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Citizen ID: 058204001107" textAlignment="CENTER" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="200.0" />
+                  <Line endX="-215.9449462890625" endY="1.52587890625E-5" layoutX="120.0" layoutY="217.0" startX="-62.540184020996094" startY="1.52587890625E-5" stroke="WHITE" style="-fx-fill: white;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="180.0" />
+                  <BorderPane id="all_borders_dashboard" fx:id="all_boarder_button" layoutX="18.857142857142858" layoutY="315.0" prefHeight="57.0" prefWidth="183.0" styleClass="tag_in_dashboard" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="250.0">
+                     <left>
+                        <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/img_user/icons8-human-30.png" />
+                           </image>
+                        </ImageView>
+                     </left>
+                     <center>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dashboard" text="All Boarders" wrappingWidth="126.09875822067261" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane id="Add Border" fx:id="add_boarder_button" layoutX="29.0" layoutY="387.0" prefHeight="57.0" prefWidth="183.0" styleClass="tag_in_dashboard" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="320.0">
+                     <left>
+                        <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/img_user/icons8-add-male-user-64.png" />
+                           </image>
+                        </ImageView>
+                     </left>
+                     <center>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dashboard" text="Add Boarder" wrappingWidth="126.09875822067261" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane id="pr_post" fx:id="pr_post_button" layoutX="22.0" layoutY="457.0" prefHeight="57.0" prefWidth="183.0" styleClass="tag_in_dashboard" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="390.0">
+                     <left>
+                        <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/img_user/icons8-add-properties-64.png" />
+                           </image>
+                        </ImageView>
+                     </left>
+                     <center>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dashboard" text="All Room" wrappingWidth="126.09875822067261" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane id="logout_dashboard" fx:id="log_out" layoutX="58.0" layoutY="558.0" prefHeight="57.0" prefWidth="183.0" styleClass="tag_in_dashboard" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0">
+                     <left>
+                        <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/img_user/icons8-logout-52.png" />
+                           </image>
+                        </ImageView>
+                     </left>
+                     <center>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dashboard" text="Log out" wrappingWidth="126.09875822067261" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane id="account_dashboard" fx:id="account_setting_button" layoutX="40.0" layoutY="605.0" prefHeight="57.0" prefWidth="183.0" styleClass="tag_in_dashboard" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0">
+                     <left>
+                        <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/img_user/icons8-account-50.png" />
+                           </image>
+                        </ImageView>
+                     </left>
+                     <center>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dashboard" text="Account setting" wrappingWidth="126.09875822067261" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane id="Add_room" fx:id="add_room_button" layoutX="32.0" layoutY="467.0" prefHeight="57.0" prefWidth="183.0" styleClass="tag_in_dashboard" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="460.0">
+                     <left>
+                        <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/img_user/icons8-room-96.png" />
+                           </image>
+                        </ImageView>
+                     </left>
+                     <center>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dashboard" text="Add Room" wrappingWidth="126.09875822067261" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <BorderPane id="content" layoutX="197.14285714285714" layoutY="176.0" prefHeight="686.0" prefWidth="905.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane id="main" prefHeight="580.0" prefWidth="882.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane id="all_border_content" fx:id="all_boarder" layoutX="358.0" layoutY="216.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text layoutX="52.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_subject_main" text="All Boarders" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="35.0" />
+                        <ComboBox id="combobox_subject_filter" fx:id="cb" layoutX="528.0" layoutY="31.0" prefHeight="35.0" prefWidth="155.0" promptText="Filter" style="-fx-background-radius: 10;" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="31.0" />
+                        <ScrollPane id="scrollpane_table" layoutX="284.0" layoutY="144.0" prefHeight="389.0" prefWidth="882.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="144.0">
+                           <content>
+                              <VBox id="vbox_in_scrollpane_table" fx:id="vbox" prefHeight="500.0" prefWidth="865.0" />
+                           </content>
+                        </ScrollPane>
+                        <AnchorPane id="anchorpane_header_table" layoutX="1.0" layoutY="97.0" prefHeight="46.0" prefWidth="822.0" AnchorPane.bottomAnchor="499.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="97.0">
+                           <children>
+                              <Text id="row_in_table" layoutX="37.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="row_in_table" text="Name" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="10.857142857142858" />
+                              <Text id="row_in_table" layoutX="278.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="row_in_table" text="Province" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="10.857142857142858" />
+                              <Text id="row_in_table" layoutX="498.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="row_in_table" text="Owe" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="10.857142857142858" />
+                              <Text layoutX="701.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="row_in_table" text="day of boarding" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="650.0" AnchorPane.topAnchor="10.857142857142858" />
+                              <Text layoutX="796.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="row_in_table" AnchorPane.bottomAnchor="10.0" />
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="reload_button" layoutX="329.0" layoutY="29.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #0077b6; -fx-text-fill: white; -fx-cursor: hand;" styleClass="button_add_boarder" text="Reload" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="31.0" />
+                     </children></AnchorPane>
+                  <AnchorPane id="add_boarder" fx:id="add_boarder" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text layoutX="65.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Name:" AnchorPane.leftAnchor="65.14285714285714" AnchorPane.topAnchor="131.41796875" />
+                        <Text layoutX="453.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Register Room" AnchorPane.topAnchor="286.41796875" />
+                        <Text layoutX="65.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Phone:" AnchorPane.leftAnchor="65.14285714285714" AnchorPane.topAnchor="286.41796875" />
+                        <Text layoutX="453.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Province:" AnchorPane.topAnchor="206.41796875" />
+                        <Text layoutX="65.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Email:" AnchorPane.leftAnchor="65.14285714285714" AnchorPane.topAnchor="206.41796875" />
+                        <Text layoutX="453.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Citizen ID:" AnchorPane.leftAnchor="453.0" AnchorPane.topAnchor="131.41796875" />
+                        <TextField fx:id="name" layoutX="54.0" layoutY="162.0" prefHeight="25.0" prefWidth="327.0" promptText="Name:" styleClass="input_add_Boarder" AnchorPane.leftAnchor="65.14285714285714" AnchorPane.rightAnchor="500.28571428571433" AnchorPane.topAnchor="162.0" />
+                        <TextField fx:id="citizen_id" layoutX="442.0" layoutY="162.0" prefHeight="25.0" prefWidth="356.0" promptText="Citizen ID:" styleClass="input_add_Boarder" AnchorPane.leftAnchor="453.0" AnchorPane.rightAnchor="84.85714285714278" AnchorPane.topAnchor="162.0" />
+                        <TextField fx:id="email" layoutX="54.0" layoutY="237.0" prefHeight="25.0" prefWidth="328.0" promptText="Email:" styleClass="input_add_Boarder" AnchorPane.leftAnchor="65.14285714285714" AnchorPane.rightAnchor="500.28571428571433" AnchorPane.topAnchor="237.0" />
+                        <TextField fx:id="province" layoutX="442.0" layoutY="237.0" prefHeight="25.0" prefWidth="356.0" promptText="Province" styleClass="input_add_Boarder" AnchorPane.leftAnchor="453.0" AnchorPane.rightAnchor="84.85714285714278" AnchorPane.topAnchor="237.0" />
+                        <TextField fx:id="phone" layoutX="54.0" layoutY="316.0" prefHeight="25.0" prefWidth="328.0" promptText="Phone:" styleClass="input_add_Boarder" AnchorPane.leftAnchor="65.14285714285714" AnchorPane.rightAnchor="500.28571428571433" AnchorPane.topAnchor="316.0" />
+                        <TextField fx:id="register_room" layoutX="442.0" layoutY="316.0" prefHeight="25.0" prefWidth="355.0" promptText="Register Room" styleClass="input_add_Boarder" AnchorPane.leftAnchor="453.0" AnchorPane.rightAnchor="84.85714285714278" AnchorPane.topAnchor="316.0" />
+                        <Text layoutX="36.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_subject_main" text="Add Boarder" />
+                        <Button id="confirm_add_boarder" fx:id="confirm_add_boarder" layoutX="53.0" layoutY="438.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="116.0" styleClass="button_add_boarder" text="Confirm" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="60.0" />
+                        <Button id="reset_add_boarder" fx:id="reset_add_boarder" layoutX="195.0" layoutY="438.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="116.0" styleClass="button_add_boarder" text="Reset" AnchorPane.bottomAnchor="110.0" AnchorPane.rightAnchor="571.2857142857143" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="pr_post" fx:id="pr_post" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_subject_main" text="PR Post" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+                        <TextArea id="text_area_post" fx:id="post" focusTraversable="false" layoutX="227.0" layoutY="74.0" prefHeight="302.0" prefWidth="479.0" promptText="Type your PR post:" AnchorPane.bottomAnchor="243.14285714285717" AnchorPane.rightAnchor="175.8571428571429" AnchorPane.topAnchor="101.0" />
+                        <Button id="confirm_add_boarder" fx:id="confirm" layoutX="581.0" layoutY="420.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="116.0" styleClass="button_add_boarder" text="Confirm" AnchorPane.leftAnchor="585.0" AnchorPane.rightAnchor="178.0" AnchorPane.topAnchor="400.0" />
+                        <Button id="reset_add_boarder" layoutX="727.0" layoutY="478.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="116.0" styleClass="button_add_boarder" text="Reset" visible="false" AnchorPane.rightAnchor="39.0" />
+                        <ImageView fitHeight="63.0" fitWidth="71.0" layoutX="737.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" styleClass="image_upload" visible="false" AnchorPane.rightAnchor="98.03571428571433">
+                           <image>
+                              <Image url="@../img/img_user/logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="63.0" fitWidth="71.0" layoutX="738.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true" styleClass="image_upload" visible="false" AnchorPane.rightAnchor="98.03571428571433">
+                           <image>
+                              <Image url="@../img/img_user/logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="63.0" fitWidth="71.0" layoutX="738.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" styleClass="image_upload" visible="false" AnchorPane.rightAnchor="98.03571428571433">
+                           <image>
+                              <Image url="@../img/img_user/logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="63.0" fitWidth="71.0" layoutX="740.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true" styleClass="image_upload" visible="false" AnchorPane.rightAnchor="98.03571428571433">
+                           <image>
+                              <Image url="@../img/img_user/logo.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="input_link1" layoutX="28.0" layoutY="101.0" promptText="Link1" styleClass="input_in_account_setting" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="670.0" AnchorPane.topAnchor="101.0" />
+                        <TextField fx:id="input_link2" layoutX="42.0" layoutY="200.0" promptText="Link2" styleClass="input_in_account_setting" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="670.0" AnchorPane.topAnchor="190.0" />
+                        <TextField fx:id="input_link3" layoutX="38.0" layoutY="275.0" promptText="Link3" styleClass="input_in_account_setting" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="670.0" />
+                        <TextField fx:id="input_link4" layoutX="43.0" layoutY="367.0" promptText="Link4" styleClass="input_in_account_setting" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="670.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="account_settting" fx:id="account_setting" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text layoutX="91.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_left_account_setting" text="Your Email:" AnchorPane.leftAnchor="40.0" />
+                        <Text layoutX="100.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_left_account_setting" text="Boarding House Location:" AnchorPane.leftAnchor="40.0" />
+                        <Text layoutX="91.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_left_account_setting" text="Your Phone:" AnchorPane.leftAnchor="40.0" />
+                        <TextField fx:id="input_email" editable="false" focusTraversable="false" layoutX="253.0" layoutY="135.0" styleClass="input_in_account_setting" AnchorPane.leftAnchor="253.0" AnchorPane.rightAnchor="147.57142857142856" AnchorPane.topAnchor="135.0" />
+                        <TextField fx:id="input_location" focusTraversable="false" layoutX="253.0" layoutY="207.0" styleClass="input_in_account_setting" AnchorPane.leftAnchor="253.0" AnchorPane.rightAnchor="147.57142857142856" />
+                        <TextField fx:id="input_phone" focusTraversable="false" layoutX="253.0" layoutY="287.0" styleClass="input_in_account_setting" AnchorPane.leftAnchor="253.0" AnchorPane.rightAnchor="147.57142857142856" />
+                        <BorderPane layoutX="753.0" layoutY="147.0" prefHeight="35.0" prefWidth="86.0" styleClass="edit" visible="false" AnchorPane.leftAnchor="730.0">
+                           <center>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_edit_account_setting" text="Edit" textAlignment="RIGHT" wrappingWidth="42.966552734375" BorderPane.alignment="CENTER" />
+                           </center>
+                           <right>
+                              <ImageView fitHeight="24.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="img_pen" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@../img/img_user/icons8-edit-30%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </right>
+                        </BorderPane>
+                        <BorderPane layoutX="740.0" layoutY="289.0" prefHeight="35.0" prefWidth="86.0" styleClass="edit" visible="false" AnchorPane.leftAnchor="730.0">
+                           <center>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_edit_account_setting" text="Edit" textAlignment="RIGHT" wrappingWidth="42.966552734375" BorderPane.alignment="CENTER" />
+                           </center>
+                           <right>
+                              <ImageView fitHeight="22.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" styleClass="img_pen" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@../img/img_user/icons8-edit-30%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </right>
+                        </BorderPane>
+                        <BorderPane layoutX="740.0" layoutY="214.0" prefHeight="35.0" prefWidth="86.0" styleClass="edit" visible="false" AnchorPane.leftAnchor="730.0">
+                           <center>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_edit_account_setting" text="Edit" textAlignment="RIGHT" wrappingWidth="42.966552734375" BorderPane.alignment="CENTER" />
+                           </center>
+                           <right>
+                              <ImageView fitHeight="21.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="img_pen" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@../img/img_user/icons8-edit-30%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </right>
+                        </BorderPane>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_subject_main" text="Account Setting" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+                        <Button id="confirm_add_boarder" fx:id="confirm_account_setting" layoutX="322.0" layoutY="401.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="188.0" styleClass="button_add_boarder" text="Update Info" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="detail_boarder" fx:id="detail_boarder" layoutY="21.14285659790039" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text layoutX="78.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Email:" />
+                        <Text layoutX="466.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Debt money:" />
+                        <Text layoutX="78.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Phone:" AnchorPane.leftAnchor="78.0" />
+                        <Text layoutX="466.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Citizen ID" />
+                        <Text layoutX="78.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Register Room:" />
+                        <Text layoutX="466.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Province:" />
+                        <TextField fx:id="email_detail" editable="false" focusTraversable="false" layoutX="86.0" layoutY="155.0" prefHeight="25.0" prefWidth="327.0" promptText="Email:" styleClass="input_add_Boarder" text="tandungnguyen918@gmail.com" AnchorPane.leftAnchor="88.0" />
+                        <TextField fx:id="province_detail" editable="false" focusTraversable="false" layoutX="474.0" layoutY="155.0" prefHeight="25.0" prefWidth="356.0" promptText="Province:" styleClass="input_add_Boarder" text="Ninh Thuan" />
+                        <TextField fx:id="register_room_detail" editable="false" focusTraversable="false" layoutX="86.0" layoutY="230.0" prefHeight="25.0" prefWidth="328.0" promptText="Register Room:" styleClass="input_add_Boarder" text="504" AnchorPane.leftAnchor="88.0" />
+                        <TextField fx:id="citizen_id_detail" editable="false" focusTraversable="false" layoutX="474.0" layoutY="230.0" prefHeight="25.0" prefWidth="356.0" promptText="Province" styleClass="input_add_Boarder" text="058204001107" />
+                        <TextField fx:id="phone_detail" editable="false" focusTraversable="false" layoutX="86.0" layoutY="309.0" prefHeight="25.0" prefWidth="328.0" promptText="Phone:" styleClass="input_add_Boarder" text="0977482071" AnchorPane.leftAnchor="88.0" />
+                        <TextField fx:id="debt_money_detail" editable="false" focusTraversable="false" layoutX="474.0" layoutY="309.0" prefHeight="25.0" prefWidth="355.0" promptText="Debt money:" styleClass="input_add_Boarder" text="2.000.000 VND" />
+                        <Button id="confirm_add_boarder" fx:id="confirm_update_detail" layoutX="92.0" layoutY="481.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="178.0" styleClass="button_add_boarder" text="Confirm Update" />
+                        <Button id="reset_add_boarder" fx:id="remove_boarder_detail" layoutX="288.0" layoutY="481.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="137.0" styleClass="button_add_boarder" text="Remove This" />
+                        <Text layoutX="30.285715103149414" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_subject_main" text="Detail Boarder" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+                        <CheckBox fx:id="paid" layoutX="760.0" layoutY="308.0" mnemonicParsing="false" text="Paid">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </CheckBox>
+                        <Text layoutX="80.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_add_boarder" text="Day of boarding:" AnchorPane.leftAnchor="78.0" />
+                        <TextField fx:id="day_of_boarding_detail" editable="false" focusTraversable="false" layoutX="88.0" layoutY="385.0" prefHeight="25.0" prefWidth="328.0" promptText="Day of boarding:" styleClass="input_add_Boarder" text="20/08/2004" AnchorPane.leftAnchor="88.0" />
+                        <TextField id="input_name" fx:id="name_detail" alignment="CENTER" editable="false" layoutX="343.0" layoutY="54.0" prefHeight="45.0" prefWidth="213.0" text="Nguyễn Tấn Dũng" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                        <Text id="edit_detail_boarder" fx:id="edit_in_detail" layoutX="804.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: italic; -fx-cursor: hand;" text="Edit Info." underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="all_border_content" fx:id="all_room" prefHeight="200.0" prefWidth="200.0" visible="false">
+                     <children>
+                        <Text layoutX="52.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_subject_main" text="ALL ROOM" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="35.0" />
+                        <ScrollPane id="scrollpane_table" layoutX="284.0" layoutY="144.0" prefHeight="357.0" prefWidth="883.0" AnchorPane.bottomAnchor="141.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="144.0">
+                           <content>
+                              <VBox id="vbox_in_scrollpane_table" fx:id="vbox_in_all_room" prefHeight="361.0" prefWidth="865.0" />
+                           </content>
+                        </ScrollPane>
+                        <AnchorPane id="anchorpane_header_table" layoutX="1.0" layoutY="97.0" prefHeight="46.0" prefWidth="822.0" AnchorPane.bottomAnchor="499.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="97.0">
+                           <children>
+                              <Text id="row_in_table" layoutX="37.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="row_in_table" text="Name" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="10.857142857142858" />
+                              <Text id="row_in_table" layoutX="278.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="row_in_table" text="Money" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="10.857142857142858" />
+                              <Text layoutX="701.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="row_in_table" text="Number of boarders" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="650.0" AnchorPane.topAnchor="10.857142857142858" />
+                              <Text layoutX="796.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="row_in_table" AnchorPane.bottomAnchor="10.0" />
+                           </children>
+                        </AnchorPane>
+                        <Button id="confirm_add_boarder" fx:id="save_all_room" layoutX="692.0" layoutY="516.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="133.0" styleClass="button_add_boarder" text="Save Change" AnchorPane.topAnchor="520.0" />
+                        <Button id="confirm_add_boarder" fx:id="reload_all_room" layoutX="523.0" layoutY="515.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" styleClass="button_add_boarder" text="Reload" AnchorPane.leftAnchor="570.0" AnchorPane.topAnchor="520.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane id="header" prefHeight="111.0" prefWidth="882.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text id="text_header_content_welcome" layoutX="46.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_header_content" text="Welcome Boarding House Management!" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="15.0" />
+                  <Text id="text_header_content_wish" layoutX="31.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_header_content" text="Hello, Wish you have a good day!" wrappingWidth="266.28575134277344" AnchorPane.leftAnchor="31.0" />
+                  <ImageView id="logo_content_header" fitHeight="71.0" fitWidth="146.0" layoutX="679.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="11.0">
+                     <image>
+                        <Image url="@../img/img_user/logo.png" />
+                     </image>
+                  </ImageView>
+                  <BorderPane id="borderpane_contact_text" layoutX="580.0" layoutY="36.0" prefHeight="34.0" prefWidth="95.0" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="81.0" AnchorPane.topAnchor="36.0" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

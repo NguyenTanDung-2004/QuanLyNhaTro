@@ -1,0 +1,148 @@
+#anchorpane_all{
+	-fx-background-image: url('https://wallpapercave.com/wp/wp7406257.jpg'); 
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover;
+}
+#before_form{
+	-fx-background-color: gray;
+	-fx-opacity: 0.3;
+	-fx-background-radius: 10px;
+	
+}
+#form{
+	-fx-background-color: rgb(108, 117, 125, 0.3);
+	-fx-background-radius: 10px;
+	-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+#text_login{
+	-fx-font-size: 30px;
+	-fx-fill: white;
+	-fx-font-weight: 700;
+	-fx-text-alignment: center;
+	
+}
+.input_login{
+	-fx-background-color: transparent;
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+	-fx-font-size: 18px;
+}
+#text_input_login{
+	-fx-fill: white;
+	-fx-font-size: 20px;
+}
+#text_forgot_password{
+	-fx-fill: white;
+	-fx-font-style: italic;
+	-fx-underline: true;
+	-fx-font-size: 14px;
+	-fx-cursor: hand;
+}
+#text_forgot_password:hover{
+	-fx-scale-x: 1.1;
+	-fx-scale-y: 1.1;
+}
+#login_button{
+	-fx-font-size: 18px;
+	-fx-font-weight: 700;
+	-fx-border-color: none;
+	-fx-background-color: #0077b6;
+	-fx-text-fill: white;
+	-fx-cursor: hand;
+}
+#login_button:hover{
+	-fx-background-color: #0096c7;
+}
+#signin_button_in_login{
+	-fx-font-size: 18px;
+	-fx-font-weight: 700;
+	-fx-border-color: none;
+	-fx-background-color: #e5e5e5;
+	-fx-text-fill: black;
+	-fx-cursor: hand;
+}
+#signin_button_in_login:hover{
+	-fx-background-color: white;
+}
+/*forgot_password*/
+#form_forgot_password{
+	-fx-background-color: rgb(108, 117, 125, 0.3);
+	-fx-background-radius: 10px;
+	-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+.input_forgot{
+	-fx-background-color: transparent;
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+	-fx-font-size: 14px;
+}
+.text_forgot{
+	-fx-fill: white;
+	-fx-font-size: 16px;
+}
+.button_forgot{
+	-fx-font-size: 18px;
+	-fx-font-weight: 700;
+	-fx-border-color: none;
+	-fx-background-color: #0077b6;
+	-fx-text-fill: white;
+	-fx-cursor: hand;
+}
+.button_forgot:hover{
+	-fx-background-color: #0096c7;
+}
+#send_code_forgot{
+	-fx-font-size: 12px;
+}
+#back_to_login_in_forgot{
+	-fx-font-size: 14px;
+	-fx-alignment: center;
+	-fx-underline: true;
+	-fx-fill: white;
+	-fx-cursor: hand;
+	-fx-font-weight: 700;
+}
+#back_to_login_in_forgot:hover{
+	-fx-fill: #0096c7;
+}
+/*form signup */
+#form_signup{
+	-fx-background-color: rgb(108, 117, 125, 0.3);
+	-fx-background-radius: 10px;
+	-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+.text_singup{
+	-fx-fill: white;
+	-fx-font-size: 16px;
+}
+.input_signup{
+	-fx-background-color: transparent;
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+	-fx-font-size: 14px;
+}
+#back_to_login_in_signup{
+	-fx-font-size: 14px;
+	-fx-alignment: center;
+	-fx-underline: true;
+	-fx-fill: white;
+	-fx-cursor: hand;
+	-fx-font-weight: 700;
+}
+#back_to_login_in_signup:hover{
+	-fx-fill: #0096c7;
+}
+#button_signup_in_signup{
+	-fx-font-size: 18px;
+	-fx-font-weight: 700;
+	-fx-border-color: none;
+	-fx-background-color: #0077b6;
+	-fx-text-fill: white;
+	-fx-cursor: hand;
+}
+#button_signup_in_signup:hover{
+	-fx-background-color: #0096c7;
+}
